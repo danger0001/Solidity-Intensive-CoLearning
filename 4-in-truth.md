@@ -13,8 +13,32 @@ timezone: Asia/Shanghai
 <!-- Content_START -->
 
 ### 2024.09.23
+![image](https://github.com/user-attachments/assets/b01f1638-52ed-4a95-bb60-32668c4c37ce)
+
+过了第一课了，岂不美哉
+### 
+
+### 2024.09.24
+![image](https://github.com/user-attachments/assets/e1fc3ec9-a4f3-4ebc-b0a4-ab6a76e4a5e9)
 
 
+过了第二课了，岂不美哉
+### 
+
+### 2024.09.25
+![image](https://github.com/user-attachments/assets/802fc33a-b7e6-444e-b434-d50f24599880)
+
+
+
+过了第三课了，岂不美哉
+### 
+
+### 2024.09.26
+今天搬家筋疲力尽，歇一天~~~
+### 
+
+### 2024.09.27
+签到啦~~~~
 ### 
 
 <!-- Content_END -->

@@ -16,45 +16,75 @@ timezone: Asia/Shanghai
 <!-- Content_START -->
 
 ### 2024.09.23
+- 天氣:晴
+- [學習紀錄Day01](https://github.com/SpC242/Solidity-CoLearning/blob/main/Day01.md) 
 
-學習內容: 
-- A 系列的 Ethernaut CTF, 之前做了差不多了. POC: [ethernaut-foundry-solutions](https://github.com/SunWeb3Sec/ethernaut-foundry-solutions)
-- A 系列的 QuillAudit CTF 題目的網站關掉了, 幫大家收集了[題目](./Writeup/SunSec/src/QuillCTF/), 不過還是有幾題沒找到. 有找到題目的人可以在發出來.
-- A 系列的 DamnVulnerableDeFi 有持續更新, 題目也不錯. [Damn Vulnerable DeFi](https://github.com/theredguild/damn-vulnerable-defi/tree/v4.0.0).
-- 使用 [Foundry](https://book.getfoundry.sh/) 在本地解題目, 可以參考下面 RoadClosed 為例子
-- ``forge test --match-teat testRoadClosedExploit -vvvv``
-#### [QuillAudit CTF - RoadClosed](./Writeup/SunSec/src/QuillCTF/RoadClosed.sol)
-```
-  function addToWhitelist(address addr) public {
-    require(!isContract(addr), "Contracts are not allowed");
-    whitelistedMinters[addr] = true;
-  }
+### 2024.09.24
+- 天氣:雨
+- [學習紀錄Day02](https://github.com/SpC242/Solidity-CoLearning/blob/main/Day02.md)
 
-  function changeOwner(address addr) public {
-    require(whitelistedMinters[addr], "You are not whitelisted");
-    require(msg.sender == addr, "address must be msg.sender");
-    require(addr != address(0), "Zero address");
-    owner = addr;
-  }
+### 2024.09.25
+- 天氣:晴
+- [學習紀錄Day03](https://github.com/SpC242/Solidity-CoLearning/blob/main/Day03.md)
 
-  function pwn(address addr) external payable {
-    require(!isContract(msg.sender), "Contracts are not allowed");
-    require(msg.sender == addr, "address must be msg.sender");
-    require(msg.sender == owner, "Must be owner");
-    hacked = true;
-  }
+### 2024.09.26
+- 天氣:晴
+- [學習紀錄Day04](https://github.com/SpC242/Solidity-CoLearning/blob/main/Day04.md)
 
-  function pwn() external payable {
-    require(msg.sender == pwner);
-    hacked = true;
-  }
-```
-- 解決這個題目需要成為合約的 owner 和 hacked = true.
-- On-chain: 可以透過 ``cast send`` 或是 forge script 來解.
-- Local: 透過 forge test 通常是在local解題, 方便 debug.
-- RoadClosed 為例子我寫了2個解題方式. testRoadClosedExploit 和 testRoadClosedContractExploit (因為題目有檢查msg.sender是不是合約, 所以可以透過constructor來繞過 isContract)
-- [POC](./Writeup/SunSec/test/QuillCTF/RoadClosed.t.sol) 
+### 2024.09.27
+- 天氣:晴
+- [學習紀錄Day05](https://github.com/SpC242/Solidity-CoLearning/blob/main/Day05.md)
 
-### 
+### 2024.09.28
+- 天氣:晴
+- [學習紀錄Day06](https://github.com/SpC242/Solidity-CoLearning/blob/main/Day06.md)
+
+### 2024.10.01
+- 天氣:陰
+- [學習紀錄Day07](https://github.com/SpC242/Solidity-CoLearning/blob/main/Day07.md)
+
+### 2024.10.02
+- 天氣:雨
+- [學習紀錄Day08](https://github.com/SpC242/Solidity-CoLearning/blob/main/Day08.md)
+
+### 2024.10.03
+- 天氣:雨
+- [學習紀錄Day09](https://github.com/SpC242/Solidity-CoLearning/blob/main/Day09.md)
+
+### 2024.10.05
+- 天氣:晴
+- [學習紀錄Day10](https://github.com/SpC242/Solidity-CoLearning/blob/main/Day10.md)
+
+### 2024.10.07
+- 天氣:晴
+- [學習紀錄Day11](https://github.com/SpC242/Solidity-CoLearning/blob/main/Day11.md)
+
+### 2024.10.08
+- 天氣:晴
+- [學習紀錄Day12](https://github.com/SpC242/Solidity-CoLearning/blob/main/Day12.md)
+
+### 2024.10.10
+- 天氣:晴
+- [學習紀錄Day13](https://github.com/SpC242/Solidity-CoLearning/blob/main/Day13.md)
+
+### 2024.10.11
+- 天氣:晴
+- [學習紀錄Day14](https://github.com/SpC242/Solidity-CoLearning/blob/main/Day14.md)
+
+### 2024.10.12
+- 天氣:晴
+- [學習紀錄Day15](https://github.com/SpC242/Solidity-CoLearning/blob/main/Day15.md)
+
+### 2024.10.14
+- 天氣:晴
+- [學習紀錄Day16](https://github.com/SpC242/Solidity-CoLearning/blob/main/Day16.md)
+
+### 2024.10.15
+- 天氣:晴
+- [學習紀錄Day17](https://github.com/SpC242/Solidity-CoLearning/blob/main/Day17.md)
+
+### 2024.10.16
+- 天氣:晴
+- [學習紀錄Day18](https://github.com/SpC242/Solidity-CoLearning/blob/main/Day18.md)
 
 <!-- Content_END -->
